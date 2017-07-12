@@ -19,7 +19,7 @@ logging:
   level.root: INFO
   file: log/dev.log
 
-
+spring.jpa.hibernate.ddl-auto: update
 spring.jpa.show-sql: true
 spring.datasource:
   driverClassName: com.mysql.jdbc.Driver

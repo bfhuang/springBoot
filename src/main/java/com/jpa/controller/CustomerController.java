@@ -51,8 +51,25 @@ public class CustomerController {
         return save;
     }
 
+    @RequestMapping(value = "/customers/customer", method = RequestMethod.PUT)
+    public Customer update(@RequestBody Customer customer) {
+        Customer save = repository.save(customer);
+        return save;
+    }
 
-    @RequestMapping("/customers/{id}")
+    @RequestMapping(value = "/customers/customer", method = RequestMethod.PATCH)
+    public Customer update1(@RequestBody Customer customer) {
+        Customer save = repository.save(customer);
+        return save;
+    }
+
+    @RequestMapping(value = "/customers/{id}", method = RequestMethod.PATCH)
+    public void delete(@PathVariable("id") Long id) {
+        repository.delete(id);
+    }
+
+
+    @RequestMapping(value = "/customers/{id}")
     public Customer getCustomerById(@PathVariable("id") Long id){
        return repository.findOne(id) ;
     }

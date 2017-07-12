@@ -3,8 +3,13 @@ package com.jpawithonetomanyrel.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TimeZone;
 
 /**
  * Created by bfhuang on 7/4/17.
@@ -69,4 +74,5 @@ public class Person {
     public void setSkills(Set<Skill> skills) {
         this.skills = skills;
     }
+
 }

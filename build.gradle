@@ -23,6 +23,7 @@ dependencies {
 //            'org.springframework.boot:spring-boot-starter-security',
 //            'org.springframework.security.oauth:spring-security-oauth2'
             'org.apache.activemq:activemq-core:5.7.0'
+//            'org.springframework.boot:spring-boot-starter-security'
 
 
 
