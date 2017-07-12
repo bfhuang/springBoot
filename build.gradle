@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '1.5.2.RELEASE'
     id 'java'
     id 'idea'
+    id 'checkstyle'
 }
 
 compileJava {
@@ -38,4 +39,24 @@ bootRun {
 
 task wrapper(type: Wrapper) {
     gradleVersion = '4.0'
+//    println 'this is the wrapper'
 }
+
+//task hello {
+//    group 'vogella'
+//    doLast {
+//        println 'Hello do last'
+//    }
+//
+//    println 'just hello'
+//
+//    doFirst{
+//        println 'Hello do first'
+//    }
+//}
+
+
+//task hello1 {
+//    group 'vogella'
+//    println "hello1"
+//}
